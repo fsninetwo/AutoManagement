@@ -1,0 +1,65 @@
+﻿<Window x:Class="CarManagment.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarManagment.Views"
+        mc:Ignorable="d"
+        Title="Администрация автомобильного хозяйства" MinHeight="600" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Главная">
+                <MenuItem x:Name="Login" Header="Вход" Click="Login_Click"/>
+                <MenuItem x:Name="Exit" Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem x:Name ="LogMenu" Header="Логи">
+                <MenuItem x:Name="Logs" Header="Логирование" Click="Logs_Click"/>
+            </MenuItem>
+            <MenuItem Header="Отчеты">
+                <MenuItem x:Name="Gruz" Header="Вывод популярного груза" Click="Gruz_Click"/>
+                <MenuItem x:Name="Vod" Header="Вывод наилучшего водителя" Click="Vod_Click"/>
+                <MenuItem x:Name="Zakaz" Header="Вывод популярного маршрута" Click="Zakaz_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Поиск:" Grid.Column="0"/>
+            <TextBox x:Name="Search" Margin="5" Grid.Column="1" TextChanged="Search_TextChanged"/>
+        </Grid>
+
+        <TabControl Grid.Row="2" SelectionChanged="TabControl_SelectionChanged">
+            <TabItem x:Name="AvtoTab" Header="Автомобили">
+                <local:AvtoView x:Name="AvtoView"/>
+            </TabItem>
+            <TabItem x:Name="VodTab" Header="Водители">
+                <local:VodView x:Name="VodView"/>
+            </TabItem>
+            <TabItem x:Name="KlientTab" Header="Клиенты">
+                <local:KlientView x:Name="KlientView" />
+            </TabItem>
+            <TabItem x:Name="GruzTab" Header="Грузы">
+                <local:GruzView x:Name="GruzView" />
+            </TabItem>
+            <TabItem x:Name="VodAvtoTab" Header="Автомобили за водителями">
+                <local:VodAvtoView x:Name="VodAvtoView" />
+            </TabItem>
+            <TabItem x:Name="ZakazTab" Header="Заказ">
+                <local:ZakazView x:Name="ZakazView"/>
+            </TabItem>
+            <TabItem x:Name="UsersTab" Header="Пользователи">
+                <local:UserView x:Name="UserView"/>
+            </TabItem>
+            <TabItem x:Name="LogTab" Header="Логи">
+                <local:LogView x:Name="LogView"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

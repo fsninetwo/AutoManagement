@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AddWindows\ZakazList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AvtoView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditViews\AvtoEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditViews\GruzEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditViews\KlientEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditViews\UserEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditViews\VodAvtoEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditViews\VodEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GruzView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\KlientView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LoginWIndow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LogView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\AvtoReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\GruzReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\KlientReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\UserReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\VodAvtoReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\VodReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Reports\ZakazReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VodAvtoView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VodView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ZakazView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AddWindows\ZakazList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AvtoView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditViews\AvtoEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditViews\GruzEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditViews\KlientEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditViews\UserEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditViews\VodAvtoEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditViews\VodEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GruzView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\KlientView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoginWIndow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LogView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\AvtoReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\GruzReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\KlientReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\UserReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\VodAvtoReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\VodReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Reports\ZakazReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VodAvtoView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VodView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ZakazView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿<Application x:Class="CarManagment.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CarManagment"
+             xmlns:views="clr-namespace:CarManagment.Views"
+             StartupUri="Views/LoginWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

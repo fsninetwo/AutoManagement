@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="CarManagment.Views.Reports.VodAvtoReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CarManagment.Views.Reports"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="300">
+    <Grid Background="White" Margin="2">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Введите слово по которому будет происходить фильтрация автомобиля за водителем." TextWrapping="Wrap" TextAlignment="Justify"/>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Content="Автомобиль:" Grid.Column="0" Grid.Row="0"/>
+                <Label Content="Водитель:" Grid.Column="0" Grid.Row="1"/>
+                <TextBox x:Name="FIO" Margin="2,2,0,2" Grid.Column="1" Grid.Row="0"/>
+                <TextBox x:Name="Marka" Margin="2,2,0,2" Grid.Column="1" Grid.Row="1"/>
+            </Grid>
+            <DataGrid Grid.Row="2" x:Name="VodAvtoReportTable" ItemsSource="{Binding Fields}" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Extended" SelectionUnit="FullRow" VerticalGridLinesBrush="LightGray" HorizontalGridLinesBrush="LightGray">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding}" Header="Поля" Width="0.5*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Save" Content="Сохранить" Grid.Column="0" Margin="0,2,0,0" Click="Save_Click"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
